@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class index
+ * Servlet implementation class Register
  */
-@WebServlet("/index")
-public class Index extends HttpServlet {
+@WebServlet("/register")
+public class Register extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Index() {
+    public Register() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +27,7 @@ public class Index extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.getRequestDispatcher("/WEB-INF/jsp/index.jsp").include(request, response);
+		request.getRequestDispatcher("/WEB-INF/jsp/register.jsp").include(request, response);
 	}
 
 	/**
